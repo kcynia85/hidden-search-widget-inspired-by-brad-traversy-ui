@@ -35,6 +35,7 @@ body {
   width: 48px;
   padding: 16px;
   border: 0;
+  border-radius: 8px;
   font-size: 18px;
   background-color: hsl(0, 0%, 100%);
   transition: width 0.3s ease;
@@ -56,8 +57,12 @@ body {
 
 .search__input--active {
   width: 200px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .search__button--active {
   transform: translateX(198px);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
