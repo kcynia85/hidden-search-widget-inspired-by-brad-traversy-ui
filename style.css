@@ -27,9 +27,37 @@ body {
 
 .search {
   position: relative;
-  height: 5;
+  height: 48px;
 }
 
 .search__input {
+  height: 48px;
+  width: 48px;
+  padding: 16px;
+  border: 0;
+  font-size: 18px;
   background-color: hsl(0, 0%, 100%);
+  transition: width 0.3s ease;
+}
+
+.search__button {
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search__input--active {
+  width: 200px;
+}
+
+.search__button--active {
+  transform: translateX(198px);
 }
